@@ -101,5 +101,85 @@ button {
   color: #757575;
   border-radius: 50px;
   min-width: 150px;
-  cursor: pointer;
+  cursor:pointer;
+}
+
+@media screen and (max-width: 1025px) {
+  main {
+    background-position: right;
+    padding-right: 0;
+    padding-bottom: 25%;
+  }
+  #content {
+    width: 99%;
+
+
+
+    textarea {
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+  }
+  #voice, button, #label-file {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 1px solid #757575;
+    color: #757575;
+  }
+  #voice {
+    width: fit-content;
+  }
+  button, #label-file {
+    min-width: 120px;
+    width: fit-content;
+    padding:10px;
+  }
+  .action-box {
+    p {
+      font-size: 16px;
+    }
+  }
+    .actions {
+      padding-right: 3%;
+      justify-content: flex-end;
+      max-width: unset;
+      min-width: unset;
+      width: 90%;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: unset;
+    gap: 0;
+  }
+  .action-box {
+    gap: 5px;
+
+    p {
+      color: #ffffff;
+    }
+  }
+
+  h1 {
+    font-size: 24px;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  #content {
+    width: 90%;
+    gap: 0;
+
+    textarea {
+      width: 100%;
+    }
+  }
+  
 }
